@@ -395,11 +395,9 @@ checkSudoku=()=>{
 if(c==true){
     para.style.color="green";
     statement.innerText="HURRAY! YOU DID IT....";
-    window.alert("HURRAY!!");
 
 }else{
     para.style.color="brown";
-    window.alert("ERROR!!");
 }
 }
 
