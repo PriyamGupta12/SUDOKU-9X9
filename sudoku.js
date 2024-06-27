@@ -2,7 +2,9 @@ submitbtn=document.querySelector(".submitButton");
 resetbtn=document.querySelector(".resetButton");
 allInputs=document.querySelectorAll("#box1");
 statement=document.querySelector("#statement");
-console.log(allInputs);
+para=document.querySelector(".para");
+
+console.log(statement);
 checkSudoku=()=>{
     var c=true;
     var b=true;
@@ -11,6 +13,7 @@ checkSudoku=()=>{
     for(let i=k;i<k+9;i++){
         if(allInputs[i].value==""){
             statement.innerText="Error! Some Empty value found";
+            
             b=false;
             break;
         }else if(allInputs[i].value=="1"){
@@ -306,7 +309,13 @@ checkSudoku=()=>{
 
     
 if(c==true){
+    para.style.color="green";
     statement.innerText="HURRAY! YOU DID IT....";
+    window.alert("HURRAY!!");
+
+}else{
+    para.style.color="brown";
+    window.alert("ERROR!!");
 }
 }
 
