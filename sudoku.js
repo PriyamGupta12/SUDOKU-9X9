@@ -323,6 +323,7 @@ if(c==true){
 reset=()=>{
     allInputs.forEach(element => {
         element.value="";
+        para.style.color="black";
         statement.innerText="LET'S CHECK THE VALIDITY OF A SUDOKU!!";
     });
 }
