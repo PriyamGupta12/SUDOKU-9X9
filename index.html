@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUDOKU</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1 id="heading">SUDOKU</h1>
+        </div>
+        <div class="update-class">
+            <div class="para">
+                <p id="statement">LET'S CHECK THE VALIDITY OF A SUDOKU!!</p>
+            </div>
+        </div>
+        <div class="sudoku-board">
+            <div class="box-of-boxes">
+                <div class="box" style="border-left:solid 0.5px; border-top:solid 0.5px" >
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-top:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-top:solid 0.5px; border-right:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-top:solid 0.5px; border-left:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-top:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-top:solid 0.5px; border-right:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-top:solid 0.5px; border-left:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-top:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-top:solid 0.5px; border-right:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-left:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box"style="border-right:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-left:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-right:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-left:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-right:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-left:solid 0.5px; border-bottom: solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-bottom: solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-right:solid 0.5px; border-bottom: solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-left:solid 0.5px; border-bottom: solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-bottom: solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-right:solid 0.5px; border-bottom: solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-left:solid 0.5px; border-bottom: solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-bottom: solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-right:solid 0.5px; border-bottom: solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-left:solid 0.5px; border-top:solid 0.5px" >
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-top:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-top:solid 0.5px; border-right:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-top:solid 0.5px; border-left:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-top:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-top:solid 0.5px; border-right:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-top:solid 0.5px; border-left:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-top:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-top:solid 0.5px; border-right:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-left:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box"style="border-right:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-left:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-right:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-left:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-right:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-left:solid 0.5px; border-bottom: solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-bottom: solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-right:solid 0.5px; border-bottom: solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-left:solid 0.5px; border-bottom: solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-bottom: solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-right:solid 0.5px; border-bottom: solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-left:solid 0.5px; border-bottom: solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-bottom: solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-right:solid 0.5px; border-bottom: solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-left:solid 0.5px; border-top:solid 0.5px" >
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-top:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-top:solid 0.5px; border-right:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-top:solid 0.5px; border-left:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-top:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-top:solid 0.5px; border-right:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-top:solid 0.5px; border-left:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-top:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-top:solid 0.5px; border-right:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-left:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box"style="border-right:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-left:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-right:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-left:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-right:solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-left:solid 0.5px; border-bottom: solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-bottom: solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-right:solid 0.5px; border-bottom: solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-left:solid 0.5px; border-bottom: solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-bottom: solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-right:solid 0.5px; border-bottom: solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-left:solid 0.5px; border-bottom: solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-bottom: solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="box" style="border-right:solid 0.5px; border-bottom: solid 0.5px">
+                    <div class="button">
+                    <div class="box-of-inputs">
+                        <div class="input1">
+                            <button class="binp1">
+                                <input id="box1s boxsusb" type="text">
+                            </button>
+                        </div>
+                        <div class="input2">
+                            <button class="binp2">
+                                <input id="box1" type="number">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+
+                
+
+        </div>
+          
+    </div>
+    <div class="subres">
+        <div class="submitbtn">
+            <button class="submitButton">
+                SUBMIT
+            </button>
+        </div>  
+        <div class="resetbtn">
+            <button class="resetButton">
+                RESET
+            </button>
+        </div>  
+        </div>
+    <script src="sudoku.js"></script>
+</body>
+</html
