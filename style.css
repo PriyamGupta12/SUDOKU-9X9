@@ -186,7 +186,7 @@ body {
     
     gap:1rem;
 }
-.submitbtn, .resetbtn{
+.submitbtn, .resetbtn,.resettbtn{
     align-items: center;
     justify-content: center;
     vertical-align: center;
@@ -194,7 +194,7 @@ body {
     display:flex;
     
 }
-.submitButton,.resetButton{
+.submitButton,.resetButton,.resettButton{
     height:2rem;
     width:10rem;
     border:none;

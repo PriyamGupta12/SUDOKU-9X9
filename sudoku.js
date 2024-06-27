@@ -1,10 +1,22 @@
 submitbtn=document.querySelector(".submitButton");
 resetbtn=document.querySelector(".resetButton");
+resettbtn=document.querySelector(".resettButton");
 allInputs=document.querySelectorAll("#box1");
 statement=document.querySelector("#statement");
 para=document.querySelector(".para");
+// var arr=new Array(81);
+// allInputs.forEach((e)=>{
+//     if(e.value!==""){
+//         arr.push(e.value);
+//     }else{
+//         arr.push(0);
+//     }
+// })
+// arr.forEach((e)=>{
+//     console.log(e);
+// })
 
-console.log(statement);
+console.log(typeof allInputs[0]);
 checkSudoku=()=>{
     var c=true;
     var b=true;
@@ -327,5 +339,59 @@ reset=()=>{
         statement.innerText="LET'S CHECK THE VALIDITY OF A SUDOKU!!";
     });
 }
+resettbtn.addEventListener("click",reset);
 submitbtn.addEventListener("click",checkSudoku);
-resetbtn.addEventListener("click",reset);
+// resetbtn.addEventListener("click",reset);
+
+
+    resetbtn.addEventListener('click', () => {
+        const arr = [];
+        allInputs.forEach((e) => {
+          arr.push(e.value !== "" ? e.value-'0' : 0);
+        });
+      
+        const jsonData = JSON.stringify(arr);
+      
+        fetch('/modify-array', {
+          method: 'POST',
+          body: jsonData,
+          headers: { 'Content-Type': 'application/json' }
+        })
+        .then(response => {
+          if (!response.ok) {
+            console.error('Error fetching data from server:', response.statusText);
+            console.log('Received response status:', response.status); // Log status code
+            return; // Exit the chain since there's no valid JSON to parse
+          }
+          return response.json();
+        })
+        .then(modifiedArray => {
+          console.log('Modified array from Python:', modifiedArray);
+          for(let i=0;i<81;i++){
+            allInputs[i].value=modifiedArray[i];
+        }
+        })
+        .catch(error => {
+          console.error('Error processing Sudoku array:', error);
+          // You can display a generic error message to the user here
+        });
+        
+      
+        // Optional: Log sent data for debugging
+        console.log('Sent data to server:', jsonData);
+      });
+      
+  
+// resetbtn.addEventListener("click",()=>{
+//     var arr=new Array(81);
+// allInputs.forEach((e)=>{
+//     if(e.value!==""){
+//         arr.push(e.value);
+//     }else{
+//         arr.push(0);
+//     }
+// })
+// arr.forEach((e)=>{
+//     console.log(e);
+// })
+// })
