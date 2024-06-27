@@ -4,6 +4,78 @@ resettbtn=document.querySelector(".resettButton");
 allInputs=document.querySelectorAll("#box1");
 statement=document.querySelector("#statement");
 para=document.querySelector(".para");
+const nextEmptySpot = (board) => {
+    for (let i = 0; i < 9; i++) {
+      for (let j = 0; j < 9; j++) {
+        if (board[i][j] === 0) {
+          return [i, j];
+        }
+      }
+    }
+    return [-1, -1];
+  };
+  
+  const checkRow = (board, row, value) => {
+    for (let i = 0; i < board[row].length; i++) {
+      if (board[row][i] === value) {
+        return false;
+      }
+    }
+    return true;
+  };
+  
+  const checkColumn = (board, column, value) => {
+    for (let i = 0; i < board.length; i++) {
+      if (board[i][column] === value) {
+        return false;
+      }
+    }
+    return true;
+  };
+  
+  const checkSquare = (board, row, column, value) => {
+    const boxRow = Math.floor(row / 3) * 3;
+    const boxCol = Math.floor(column / 3) * 3;
+  
+    for (let r = 0; r < 3; r++) {
+      for (let c = 0; c < 3; c++) {
+        if (board[boxRow + r][boxCol + c] === value) {
+          return false;
+        }
+      }
+    }
+    return true;
+  };
+  
+  const checkValue = (board, row, column, value) => {
+    return checkRow(board, row, value) &&
+           checkColumn(board, column, value) &&
+           checkSquare(board, row, column, value);
+  };
+  
+  const solve = (board) => {
+    const emptySpot = nextEmptySpot(board);
+    const row = emptySpot[0];
+    const col = emptySpot[1];
+  
+    // No empty spots, solved!
+    if (row === -1) {
+      return board;
+    }
+  
+    for (let num = 1; num <= 9; num++) {
+      if (checkValue(board, row, col, num)) {
+        board[row][col] = num;
+        solve(board); // Recursive call to try next number at empty spot
+      }
+    }
+  
+    // Backtrack if no valid number found for this spot
+    if (nextEmptySpot(board)[0] !== -1) {
+      board[row][col] = 0;
+    }
+    return board;
+  };
 // var arr=new Array(81);
 // allInputs.forEach((e)=>{
 //     if(e.value!==""){
@@ -218,7 +290,7 @@ checkSudoku=()=>{
             for(let k=p;k<9;k+=3){
                 var check = [0,0,0,0,0,0,0,0,0];
                 for(let j=k;j<k+3;j++){
-                    for(let i=i;i<j+19;i+=9){
+                    for(let i=j;i<j+19;i+=9){
                         if(allInputs[i].value==""){
                             statement.innerText="Error! Some Empty value found";
                             b=false;
@@ -344,54 +416,35 @@ submitbtn.addEventListener("click",checkSudoku);
 // resetbtn.addEventListener("click",reset);
 
 
-    resetbtn.addEventListener('click', () => {
-        const arr = [];
-        allInputs.forEach((e) => {
-          arr.push(e.value !== "" ? e.value-'0' : 0);
-        });
-      
-        const jsonData = JSON.stringify(arr);
-      
-        fetch('/modify-array', {
-          method: 'POST',
-          body: jsonData,
-          headers: { 'Content-Type': 'application/json' }
-        })
-        .then(response => {
-          if (!response.ok) {
-            console.error('Error fetching data from server:', response.statusText);
-            console.log('Received response status:', response.status); // Log status code
-            return; // Exit the chain since there's no valid JSON to parse
-          }
-          return response.json();
-        })
-        .then(modifiedArray => {
-          console.log('Modified array from Python:', modifiedArray);
-          for(let i=0;i<81;i++){
-            allInputs[i].value=modifiedArray[i];
-        }
-        })
-        .catch(error => {
-          console.error('Error processing Sudoku array:', error);
-          // You can display a generic error message to the user here
-        });
-        
-      
-        // Optional: Log sent data for debugging
-        console.log('Sent data to server:', jsonData);
-      });
+resetbtn.addEventListener("click", () => {
+let arr = [];
+allInputs.forEach((e) => {
+    arr.push(e.value !== "" ? e.value-'0' : 0);
+});
+
+sudoku=[]
+for(let i=0;i<81;i+=9){
+    array=[]
+    for(let j=i;j<i+9;j++){
+        array.push(arr[j]);
+    }
+    sudoku.push(array);
+}
+ans=[]
+ans=solve(sudoku);
+console.log(ans);
+modifiedArray=[]
+for(let i=0;i<9;i++){
+    for(let j=0;j<9;j++){
+        modifiedArray.push(ans[i][j]);
+    }
+}
+
+console.log(modifiedArray);
+for(let i=0;i<81;i++){
+    allInputs[i].value=modifiedArray[i];
+}
+
+});
       
   
-// resetbtn.addEventListener("click",()=>{
-//     var arr=new Array(81);
-// allInputs.forEach((e)=>{
-//     if(e.value!==""){
-//         arr.push(e.value);
-//     }else{
-//         arr.push(0);
-//     }
-// })
-// arr.forEach((e)=>{
-//     console.log(e);
-// })
-// })
